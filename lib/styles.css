@@ -1,15 +1,22 @@
-body {
+section {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 15vh 15vw;
+  height: 60vh;
+  width: 60vw;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 3px dashed red;
 }
-
 h1, h2, #start-button {
   font-family: 'Bungee', cursive;
   font-size: 45px;
 }
-
 h1 {
   font-size: 70px;
 }
+
 #start-button {
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
