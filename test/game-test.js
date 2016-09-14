@@ -1,9 +1,10 @@
 const assert = require('chai').assert;
 
-const Lingo = require('../lib/game.js');
+const Lingo = require('../lib/game');
 
 describe('Lingo', function(){
   it('should be an object', function(){
-    assert.isObject(Lingo);
+    var lingo = new Lingo();
+    assert.isObject(lingo);
   });
 });
