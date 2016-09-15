@@ -24,10 +24,10 @@ table {
   width: 100%;
 }
 
-table, th, td, .letter-guess {
+table, th, td, .letter-guess, .letter-last {
   border: 2px solid black;
 }
-th, td, .letter-guess {
+th, td, .letter-guess, .letter-last {
   text-align: center;
   vertical-align: middle;
 }
@@ -41,7 +41,7 @@ th, td, .letter-guess {
   font-size: 4em;
 }
 
-.letter-guess {
+.letter-guess, .letter-last {
   font-family: 'Bungee', cursive;
   font-size: 1em;
   height: 100%;
