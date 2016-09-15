@@ -37,7 +37,7 @@ th, td, .letter-guess, .letter-last {
   border-bottom: 4px solid #1b435e;
 }
 
-.letter-tile {
+.letter-tile, .input-tile {
   font-size: 4em;
 }
 
