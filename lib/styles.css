@@ -43,6 +43,7 @@ h1 {
   border-top-color: #28597a;
   background: #28597a;
   color: #ccc;
+  cursor: pointer;
 }
 #start-button:active {
   border-top-color: #1b435e;

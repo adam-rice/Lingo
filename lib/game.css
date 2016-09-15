@@ -23,7 +23,9 @@ table {
   height: 100%;
   width: 100%;
 }
-
+.input-tile {
+  background-color: magenta;
+}
 table, th, td, .letter-guess, .letter-last {
   border: 2px solid black;
 }
