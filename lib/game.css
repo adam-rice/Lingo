@@ -1,0 +1,52 @@
+body {
+  font-family: 'Bungee', cursive;
+}
+
+#gametime {
+  margin: 15vh 15vw;
+  min-height: 600px;
+  height: auto;
+  width: 600px;
+  border: 4px dashed magenta;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 30px;
+}
+
+table {
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  height: 100%;
+  width: 100%;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+th, td, .letter-guess {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-tile {
+  font-size: 4em;
+  border-bottom: 4px solid #1b435e;
+}
+
+.letter-tile {
+  font-size: 4em;
+}
+
+.letter-guess {
+  font-family: 'Bungee', cursive;
+  font-size: 1em;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+}
