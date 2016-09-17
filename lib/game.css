@@ -53,6 +53,8 @@ th, td, .letter-guess, .letter-last {
 }
 .letter-last:focus {
   transition: all 0.15s ease-in-out;
+  outline: none;
+  border: 1.5px solid red;
 }
 .orange {
   background: orange;
