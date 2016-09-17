@@ -4,13 +4,13 @@ section {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   margin: 15vh 15vw;
-  min-height: 60vh;
+  width: 600px;
   height: auto;
-  width: 60vw;
   padding: 10px;
-  box-sizing: border-box;
   text-align: center;
-  border: 3px dashed red;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom, #3ACFD5 0%, #3a4ed5 100%);
+  border-image-slice: 1;
 }
 h1, h2, #start-button {
   font-family: 'Bungee', cursive;
@@ -21,7 +21,7 @@ h1 {
   font-size: 70px;
 }
 #instructions-box {
-  border: 3px dashed black;
+  border: 3px solid black;
 }
 .instructions {
   padding: 0 50px;
@@ -44,6 +44,7 @@ h1 {
   background: #28597a;
   color: #ccc;
   cursor: pointer;
+  border: 5px solid #3a4ed5;
 }
 #start-button:active {
   border-top-color: #1b435e;
