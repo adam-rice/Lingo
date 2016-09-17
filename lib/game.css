@@ -23,7 +23,7 @@ table {
   height: 100%;
   width: 100%;
 }
-table, th, td, .letter-guess, .letter-last {
+table, th, td {
   border: 2px solid black;
 }
 th, td, .letter-guess, .letter-last {
@@ -32,9 +32,10 @@ th, td, .letter-guess, .letter-last {
 }
 .header-tile {
   font-size: 4em;
-  border-bottom: 4px solid #1b435e;
 }
-
+input {
+  border: none;
+}
 .letter-tile, .input-tile {
   font-size: 4em;
 }
@@ -45,16 +46,20 @@ th, td, .letter-guess, .letter-last {
   height: 100%;
   width: 100%;
   background: none;
+  padding: none;
+  box-sizing: border-box;
 }
 .letter-guess:focus {
-  transition: all 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
   outline: none;
-  border: 1px solid orange;
+  margin:-5px -1px;
+  border: 5px solid #FF932F;
 }
 .letter-last:focus {
-  transition: all 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
   outline: none;
-  border: 1.5px solid red;
+  margin:-5px 0;
+  border: 5px solid #F23C55;
 }
 .orange {
   background: orange;
