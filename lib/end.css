@@ -1,5 +1,5 @@
 section {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bungee', cursive;
   font-size: 16px;
   margin: 15vh 15vw;
   width: 600px;
@@ -10,16 +10,16 @@ section {
 }
 header {
   font-size: 70px;
-  font-family: 'Bungee', cursive;
   padding: 5px;
 }
 #score-box {
   border: 3px solid black;
+  padding: 10px;
 }
 .score, .high-score {
   display: inline-block;
   height: 40px;
-  width: 250px;
+  width: 200px;
   margin: auto;
 }
 .score{
@@ -33,12 +33,25 @@ header {
   background: #65a9d7;
   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
   padding: 10px 20px;
+  width: 420px;
   border-radius: 6px;
   color: white;
+  margin: 20px 0px;
 }
 #play-again-button:hover{
   cursor: pointer;
 }
 #play-again-button:focus{
   outline: none;
+}
+footer {
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+span {
+  font-family: 'Bungee', cursive;
+  font-size: 75px;
+  
 }
