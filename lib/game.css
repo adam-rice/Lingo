@@ -7,7 +7,7 @@ body {
   min-height: 600px;
   height: auto;
   width: 600px;
-  background: beige;
+  background: white;
   padding: 10px;
   border: 10px solid transparent;
   border-image: linear-gradient(to right, #efb837 0%, #e03933 100%);
@@ -75,4 +75,11 @@ input {
 .yellow {
   background: yellow;
   background: linear-gradient(to bottom right, #fff173 0%, #ffe921 100%);
+}
+#score, #high-score {
+  display: inline-block;
+  height: 40px;
+  width: 40%;
+  margin: auto;
+  border: 1px dashed black;
 }
