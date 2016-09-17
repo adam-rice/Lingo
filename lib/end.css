@@ -22,11 +22,12 @@ header {
   width: 200px;
   margin: auto;
   border: 4px solid black;
+  margin-bottom: 20px;
 }
 #play-again-button{
   font-size: 16px;
   background: #65a9d7;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#696969));
   padding: 10px 20px;
   width: 420px;
   border-radius: 6px;
@@ -48,7 +49,7 @@ footer {
 }
 span {
   font-family: 'Bungee', cursive;
-  font-size: 75px;
+  font-size: 120px;
   background: -webkit-linear-gradient(left, #e03933, #efb837, #3ACFD5, #3a4ed5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
