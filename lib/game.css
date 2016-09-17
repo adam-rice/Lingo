@@ -7,7 +7,7 @@ body {
   min-height: 600px;
   height: auto;
   width: 600px;
-  border: 8px dashed magenta;
+  border: 8px dashed #FFD5D0;
 }
 
 h1 {
@@ -23,9 +23,6 @@ table {
   height: 100%;
   width: 100%;
 }
-.input-tile {
-  background-color: magenta;
-}
 table, th, td, .letter-guess, .letter-last {
   border: 2px solid black;
 }
@@ -33,7 +30,6 @@ th, td, .letter-guess, .letter-last {
   text-align: center;
   vertical-align: middle;
 }
-
 .header-tile {
   font-size: 4em;
   border-bottom: 4px solid #1b435e;
@@ -49,5 +45,20 @@ th, td, .letter-guess, .letter-last {
   height: 100%;
   width: 100%;
   background: none;
-  border: none;
+}
+.letter-guess:focus {
+  transition: all 0.15s ease-in-out;
+  outline: none;
+  border: 1px solid orange;
+}
+.letter-last:focus {
+  transition: all 0.15s ease-in-out;
+}
+.orange {
+  background: orange;
+  background: linear-gradient(to bottom right, #ffa84c, #ff7b0d);
+}
+
+.yellow {
+
 }
