@@ -7,7 +7,10 @@ body {
   min-height: 600px;
   height: auto;
   width: 600px;
-  border: 8px dashed #FFD5D0;
+  padding: 10px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, #efb837 0%, #e03933 100%);
+  border-image-slice: 1;
 }
 
 h1 {
@@ -58,7 +61,7 @@ input {
 .letter-last:focus {
   transition: all 0.2s ease-in-out;
   outline: none;
-  margin:-5px 0;
+  margin: -5px 0;
   border: 5px solid #F23C55;
 }
 .orange {
@@ -67,5 +70,6 @@ input {
 }
 
 .yellow {
-
+  background: yellow;
+  background: linear-gradient(to bottom right, #fff173 0%, #ffe921 100%);
 }
