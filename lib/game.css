@@ -24,10 +24,10 @@ h1 {
 }
 
 table {
-  background: #65a9d7;
+  /*background: #65a9d7;
   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
   height: 100%;
-  width: 100%;
+  width: 100%;*/
 }
 table, th, td {
   border: 2px solid black;
@@ -76,10 +76,20 @@ input {
   background: yellow;
   background: linear-gradient(to bottom right, #fff173 0%, #ffe921 100%);
 }
+footer {
+  display: flex;
+  height: 80px;
+}
 #score, #high-score {
-  display: inline-block;
   height: 40px;
-  width: 40%;
+  width: 250px;
+  vertical-align: middle;
+  justify-content: space-around;
   margin: auto;
-  border: 1px dashed black;
+}
+#score {
+  border: 8px solid #efb837;
+}
+#high-score {
+  border: 8px solid #e03933;
 }
