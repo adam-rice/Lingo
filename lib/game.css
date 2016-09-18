@@ -12,6 +12,9 @@ body {
   border: 10px solid transparent;
   border-image: linear-gradient(to right, #efb837 0%, #e03933 100%);
   border-image-slice: 1;
+  -webkit-animation: transitionSmoother ease-in .5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: transitionSmoother ease-in .5s; /* Firefox < 16 */
+  animation: transitionSmoother ease-in .5s;
 }
 
 h1 {
@@ -31,6 +34,9 @@ th, td, .letter-guess, .letter-last {
 }
 .header-tile {
   font-size: 4em;
+  -webkit-animation: dragLeft ease-in .5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: dragLeft ease-in .5s; /* Firefox < 16 */
+  animation: dragLeft ease-in .5s;
 }
 input {
   border: none;
@@ -49,13 +55,11 @@ input {
   box-sizing: border-box;
 }
 .letter-guess:focus {
-  transition: all 0.2s ease-in-out;
   outline: none;
   margin:-5px -1px;
   border: 5px solid #efb837;
 }
 .letter-last:focus {
-  transition: all 0.2s ease-in-out;
   outline: none;
   margin: -5px 0;
   border: 5px solid #F23C55;
@@ -64,10 +68,9 @@ input {
   background: orange;
   background: linear-gradient(to bottom right, #ffa84c, #ff7b0d);
 }
-
 .yellow {
   background: yellow;
-  background: linear-gradient(to bottom right, #fff173 0%, #ffe921 100%);
+  background: linear-gradient(to bottom right, #fff173, #ffe921);
 }
 footer {
   display: flex;
@@ -85,4 +88,25 @@ footer {
 }
 #high-score {
   border: 8px solid #e03933;
+}
+.mystery-word {
+  display: inline-block;
+}
+@keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dragLeft { /* FOR THE FIRST MYSTERY TILE */
+  0% {
+    opacity: 0;
+    transform: translate(50px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
 }
