@@ -23,7 +23,7 @@
         <td><input type="text" class="letter-guess" pattern="[A-Za-z]" maxlength="1" value=""></td>
         <td><input type="text" class="letter-guess" pattern="[A-Za-z]" maxlength="1" value=""></td>
         <td><input type="text" class="letter-guess" pattern="[A-Za-z]" maxlength="1" value=""></td>
-        <td><input type="text" class="letter-last" value="" pattern="[A-Za-z]" maxlength="1"></td>
+        <td><input type="text" class="letter-last" value="" pattern="[A-Za-z]" id="column-last" maxlength="1"></td>
       </tr>
       <tr class = "letter-tile">
         <td><br> </td>
@@ -62,7 +62,7 @@
       </tr>
     </table>
     <footer>
-      <div id="score"> Score:<br> </div>
+      <div id="score"> Score:<br> <span id="current-score"> </span> </div>
       <div id="high-score"> High Score: <br> </div>
     </footer>
   </div>
