@@ -90,7 +90,16 @@ footer {
   border: 8px solid #e03933;
 }
 .mystery-word {
-  display: inline-block;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  width: 300px;
+  left: 450px;
+  height: 450px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.mystery {
+  color: #ff7b0d;
 }
 @keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
   0% {
