@@ -7,13 +7,15 @@ section {
   padding: 10px;
   text-align: center;
   border: 10px solid black;
+  -webkit-animation: transitionSmoother ease-in 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: transitionSmoother ease-in 2s; /* Firefox < 16 */
+  animation: transitionSmoother ease-in 2s;
 }
 header {
   font-size: 70px;
   padding: 5px;
 }
 #score-box {
-  border: 3px solid black;
   padding: 10px;
 }
 .score, .high-score {
@@ -52,4 +54,12 @@ span {
   background: -webkit-linear-gradient(left, #e03933, #efb837, #3ACFD5, #3a4ed5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
