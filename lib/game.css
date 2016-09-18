@@ -90,6 +90,9 @@ footer {
 #high-score {
   border: 8px solid #e03933;
 }
+.mystery-word {
+  display: inline-block;
+}
 @keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
   0% {
     opacity: 0;
