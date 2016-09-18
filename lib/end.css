@@ -7,9 +7,9 @@ section {
   padding: 10px;
   text-align: center;
   border: 10px solid black;
-  -webkit-animation: transitionSmoother ease-in 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: transitionSmoother ease-in 2s; /* Firefox < 16 */
-  animation: transitionSmoother ease-in 2s;
+  -webkit-animation: transitionSmoother ease-in 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: transitionSmoother ease-in 1s; /* Firefox < 16 */
+  animation: transitionSmoother ease-in 1s;
 }
 header {
   font-size: 70px;
@@ -17,24 +17,33 @@ header {
 }
 #score-box {
   padding: 10px;
+  border-bottom: 3px solid black;
 }
-.score, .high-score {
+.score, .high-score, .mystery-word {
   display: inline-block;
   height: 40px;
   width: 200px;
   margin: auto;
   border: 4px solid black;
-  margin-top: 10px;
+  box-sizing: border-box;
+}
+.score, .high-score {
+  margin-bottom: 10px;
+}
+
+.mystery-word {
+  position: relative;
+  top: -8px;
 }
 #play-again-button{
+  display: inline-block;
   font-size: 16px;
-  background: #65a9d7;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#696969));
-  padding: 10px 20px;
-  width: 420px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#000000));
+  padding: 10px;
+  width: 200px;
   border-radius: 6px;
   color: white;
-  margin: 10px 0px;
+  box-sizing: border-box;
 }
 #play-again-button:hover{
   cursor: pointer;
@@ -43,7 +52,7 @@ header {
   outline: none;
 }
 footer {
-  margin-top: 10px;
+  margin-top: 40px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 800;
