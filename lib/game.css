@@ -34,9 +34,9 @@ th, td, .letter-guess, .letter-last {
 }
 .header-tile {
   font-size: 4em;
-  -webkit-animation: dragLeft  .5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: dragLeft  .5s; /* Firefox < 16 */
-  animation: dragLeft  .5s;
+  -webkit-animation: dragLeft  1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: dragLeft  1s; /* Firefox < 16 */
+  animation: dragLeft  1s;
 }
 input {
   border: none;
