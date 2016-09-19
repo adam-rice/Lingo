@@ -25,29 +25,36 @@ h1 {
   margin-left: 50px;
   padding: 5px;
 }
+
 table {
   display: inline-block;
 }
+
 table, th, td {
   border: 3px solid black;
 }
+
 th, td, .letter-guess, .letter-last {
   text-align: center;
   vertical-align: middle;
 }
+
 .header-tile {
   font-size: 4em;
   -webkit-animation: dragLeft ease-in .5s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: dragLeft ease-in .5s; /* Firefox < 16 */
   animation: dragLeft ease-in .5s;
 }
-span {
+
+.dash {
   font-family: cursive;
   vertical-align: 5px;
 }
+
 input {
   border: none;
 }
+
 .letter-tile, .input-tile {
   font-size: 4em;
 }
@@ -61,41 +68,59 @@ input {
   padding: none;
   box-sizing: border-box;
 }
+
 .letter-guess:focus {
   outline: none;
   margin:-5px -1px;
   border: 5px solid #efb837;
 }
+
 .letter-last:focus {
   outline: none;
   margin: -5px 0;
   border: 5px solid #F23C55;
 }
+
 .orange {
   background: orange;
   background: linear-gradient(to bottom right, #ffa84c, #ff7b0d);
 }
+
 .yellow {
   background: yellow;
   background: linear-gradient(to bottom right, #fff173, #ffe921);
 }
+
 footer {
   display: flex;
   height: 80px;
 }
-#score, #high-score {
+
+article {
   height: 40px;
   width: 250px;
-  vertical-align: middle;
-  justify-content: space-around;
+  text-align: center;
   margin: auto;
 }
+
+p {
+  margin-top: 10px;
+}
+
 #score {
   border: 8px solid #efb837;
+  -webkit-animation: scoreAnimation ease-in 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: scoreAnimation ease-in 2s; /* Firefox < 16 */
+  animation: scoreAnimation ease-in 2s;
 }
+
 #high-score {
   border: 8px solid #e03933;
+  -webkit-animation: highScoreAnimation ease-in 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: highScoreAnimation ease-in 2s; /* Firefox < 16 */
+  animation: highScoreAnimation ease-in 2s;
 }
+
 .mystery-word {
   display: inline-block;
   position: relative;
@@ -106,10 +131,12 @@ footer {
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+
 .mystery {
   color: #ff7b0d;
   font-family: 'Bungee';
 }
+
 @keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
   0% {
     opacity: 0;
@@ -118,6 +145,7 @@ footer {
     opacity: 1;
   }
 }
+
 @keyframes dragLeft { /* FOR THE FIRST MYSTERY TILE */
   0% {
     opacity: 0;
@@ -126,5 +154,23 @@ footer {
   100% {
     opacity: 1;
     transform: translate(0px, 0px);
+  }
+}
+
+@keyframes scoreAnimation {
+  0% {
+    background-color: #efb837;
+  }
+  100% {
+    background-color: #FFFFFF;
+  }
+}
+
+@keyframes highScoreAnimation {
+  0% {
+    background-color: #e03933;
+  }
+  100% {
+    background-color: #FFFFFF;
   }
 }

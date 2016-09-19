@@ -37,6 +37,7 @@ h2, ul {
 }
 .instructions {
   padding: 0 50px;
+  margin-top: 15px;
 }
 #yellow {
   color: #ffe921;
