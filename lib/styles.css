@@ -8,9 +8,6 @@ section {
   height: auto;
   padding: 10px;
   text-align: center;
-  /*border: 10px solid transparent;
-  border-image: linear-gradient(to bottom, #3ACFD5 0%, #3a4ed5 100%);
-  border-image-slice: 1;*/
   outline: 10px dashed #BEF202;
   box-shadow: 0 0 0 10px #65a9d7;
   animation: 1.5s animateBorder ease infinite;
@@ -59,7 +56,6 @@ h2, ul {
   background: #28597a;
   color: #ccc;
   cursor: pointer;
-  /*border: 5px solid #3a4ed5;*/
 }
 #start-button:active {
   border-top-color: #1b435e;
