@@ -25,6 +25,9 @@ h1 {
   margin-left: 50px;
   padding: 5px;
 }
+table {
+  display: inline-block;
+}
 table, th, td {
   border: 3px solid black;
 }
@@ -90,12 +93,13 @@ footer {
   border: 8px solid #e03933;
 }
 .mystery-word {
-  position: absolute;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  left: 80px;
+  top: -10px;
   font-size: 50px;
   color: white;
-  width: 300px;
-  left: 450px;
-  height: 450px;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .mystery {
