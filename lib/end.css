@@ -49,7 +49,7 @@ header {
 }
 #play-again-button:hover{
   cursor: pointer;
-    background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#097054));
+    background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#3a4ed5));
     animation: none;
 }
 #play-again-button:focus{
