@@ -38,15 +38,19 @@ header {
 #play-again-button{
   display: inline-block;
   font-size: 16px;
+  font-weight: bolder;
   background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#000000));
   padding: 10px;
   width: 200px;
   border-radius: 6px;
   color: white;
   box-sizing: border-box;
+  animation: blinker 1.8s linear infinite;
 }
 #play-again-button:hover{
   cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#3a4ed5));
+    animation: none;
 }
 #play-again-button:focus{
   outline: none;
@@ -66,9 +70,12 @@ span {
 }
 @keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
   0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
   }
+}
+@keyframes blinker {
+  50% { opacity: 0.6; }
 }
