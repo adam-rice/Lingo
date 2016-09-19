@@ -38,6 +38,10 @@ th, td, .letter-guess, .letter-last {
   -moz-animation: dragLeft ease-in .5s; /* Firefox < 16 */
   animation: dragLeft ease-in .5s;
 }
+span {
+  font-family: cursive;
+  vertical-align: 5px;
+}
 input {
   border: none;
 }
@@ -100,6 +104,7 @@ footer {
 }
 .mystery {
   color: #ff7b0d;
+  font-family: 'Bungee';
 }
 @keyframes transitionSmoother { /* FOR THE PAGE ON REFRESH */
   0% {
