@@ -38,6 +38,17 @@ h2, ul {
 .instructions {
   padding: 0 50px;
 }
+#yellow {
+  color: #ffe921;
+  font-weight: 800;
+}
+#orange {
+  color: #ff7b0d;
+  font-weight: 800;
+}
+.italics {
+  font-style: italic;
+}
 #start-button {
   vertical-align: bottom;
   bottom: 0px;
