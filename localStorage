@@ -1,0 +1,124 @@
+diff --git a/lib/end.js b/lib/end.js
+index 0076362..ff77573 100644
+--- a/lib/end.js
++++ b/lib/end.js
+@@ -1 +1,5 @@
+ const $ = require('jquery');
++const Score = require('../lib/score');
++
++var currentScore = Score.retrieveCurrentScore();
++$('.score').html('<div class="score">Score: '+currentScore+'</div>');
+diff --git a/lib/game.js b/lib/game.js
+index 227fdfe..60c724b 100644
+--- a/lib/game.js
++++ b/lib/game.js
+@@ -9,8 +9,13 @@ var mysteryWord = lingo.generateMysteryWord(mysteryWordARRAY);
+ var mysteryWordArray = lingo.generateWordArray(mysteryWord);
+ 
+ 
+-var currentScore = Score.retrieveCurrentScore();
+-Score.renderScore(currentScore);
++// var currentScore = Score.retrieveCurrentScore();
++// var highScore = Score.retrieveHighScore();
++// Score.renderScore(currentScore, highScore);
++
++Score.retrieveScores();
++
++
+ 
+ function mysteryRow(){
+   return "<tr class = 'header-tile'><th class ='orange'>"+mysteryWordArray[0]+"</th><th><span class='dash'>-</span></th><th><span class='dash'>-</span></th><th><span class='dash'>-</span></th><th><span class='dash'>-</span></th></tr>";
+@@ -118,8 +123,9 @@ function prependRow(guess){
+ function correctGuess(){
+   var currentScore = parseInt(Score.retrieveCurrentScore());
+   var newScore = Score.updateScore(currentScore);
+-  Score.renderScore(newScore);
+-  Score.storeCurrentScore(newScore);
++  var highScore = Score.updateHighScore(newScore);
++  Score.renderScore(newScore, highScore);
++  Score.storeScores(newScore, highScore);
+   setTimeout(location.reload.bind(location), 2200);
+ }
+ 
+diff --git a/lib/score.js b/lib/score.js
+index 0a83786..28c416c 100644
+--- a/lib/score.js
++++ b/lib/score.js
+@@ -3,58 +3,43 @@ const $ = require('jquery');
+ var Score = {
+   currentScore : 0,
+   highScore : 0,
+-  mysteryWord : '',
+-
+-  // initialStore: function() {
+-  //   localStorage.setItem('score', Score.currentScore);
+-  // },
+ 
+   updateScore: function(currentScore){
+     currentScore++;
+     return currentScore;
+   },
+ 
+-  // updateHighScore: function(){
+-  //   if(this.currentScore > this.highScore){
+-  //     this.highScore = this.currentScore;
+-  //     this.updateHighScore();
++  // updateHighScore: function(newScore){
++  //   var highScore = this.highScore;
++  //   if(newScore > highScore){
++  //     highScore = newScore;
++  //     return highScore;
+   //   }
+-  //   this.renderScore(Score);
+   // },
+ 
+-  renderScore: function(Score){
++  renderScore: function(Score, highScore){
+     var score = parseInt(Score);
+-    $('.game-footer').html('<article id="score"><p>Score: <span id="current-score">'+score+'</span></p></article>');
+-    // "Scores "+this.currentScore;
+-    // "Your Scores"+this.highScore;
++    var bestScore = parseInt(highScore);
++    $('.game-footer').html('<article id="score"><p>Score: <span id="current-score">'+score+'</span></p></article><article id="high-score"><p>High Score: <span id="current-high-score">'+bestScore+'</span><p></article>');
+   },
+ 
+-  // <article id="high-score"><p>High Score: <span id="current-high-score">${Score.highScore}</span><p></article>
+-
+-  storeCurrentScore: function(newScore) {
++  storeScores: function(newScore, highScore) {
++    var scores = [];
+     this.currentScore = newScore;
+-    localStorage.setItem('score', newScore);
++    this.highScore = highScore;
++    scores.push(newScore);
++    scores.push(highScore);
++    localStorage.setItem('scores', JSON.stringify(scores));
+   },
+ 
+-// storeHighScore: function(highScore){
+-//     localStorage.setItem('highScore',this.highScore);
+-//   },
+-//
+-// storeMysteryWord: function(mysteryWord){
+-//     localStorage.setItem('mysteryWord',this.mysteryWord);
+-//   },
+-
+-  retrieveCurrentScore: function(){
+-    return localStorage.getItem('score');
+-  },
++  // retrieveCurrentScore: function(){
++  //   return localStorage.getItem('score');
++  // },
+ 
+-    retrieveHighScore: function(){
+-    return  localStorage.getItem('highScore');
++    retrieveScores: function(){
++    return  JSON.parse(localStorage.getItem('scores'));
+   },
+ 
+-    retrieveMysteryWord: function(){
+-    return localStorage.getItem('mysteryWord');
+-  },
+ 
+   clearStorage: function(){
+     localStorage.setItem('score', 0);
