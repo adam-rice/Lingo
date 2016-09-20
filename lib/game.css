@@ -30,7 +30,7 @@ table {
   display: inline-block;
 }
 
-table, th, td {
+th, td {
   border: 3px solid black;
 }
 
