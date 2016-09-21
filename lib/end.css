@@ -19,7 +19,7 @@ header {
   padding: 10px;
   border-bottom: 3px solid black;
 }
-.score, .high-score, .mystery-word {
+.score, .high-score, .mystery-info {
   display: inline-block;
   height: 40px;
   width: 200px;
@@ -30,22 +30,16 @@ header {
 .score, .high-score {
   margin-bottom: 10px;
 }
-
-.mystery-word {
-  position: relative;
-  top: -8px;
-}
 #play-again-button{
-  display: inline-block;
+  position: relative;
+  bottom: 7px;
   font-size: 16px;
   font-weight: bolder;
   background: -webkit-gradient(linear, left top, left bottom, from(#696969), to(#000000));
   padding: 10px;
-  height: 41px;
+  height: 40px;
   width: 200px;
-  /*border-radius: 6px;*/
   color: white;
-  box-sizing: border-box;
   animation: blinker 1.8s linear infinite;
 }
 #play-again-button:hover{
