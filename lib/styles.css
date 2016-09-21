@@ -1,9 +1,13 @@
-section {
+body {
   display: flex;
+  justify-content: center;
+}
+
+section {
   flex-flow: column;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 15vh 15vw;
+  margin: 15vh;
   width: 600px;
   height: auto;
   padding: 10px;
