@@ -1,5 +1,6 @@
 const assert = require('chai').assert;
 const Lingo = require('../lib/game');
+const Score = require('../lib/score');
 
 describe('Lingo', function(){
   it('should be an object', function(){
@@ -23,37 +24,100 @@ describe('Lingo', function(){
      assert.isTrue(answer);
      // yellow
    });
-   it('should check the index of the character in the array', function() {
-     var lingo = new Lingo();
-     var alexArray = lingo.generateWordArray('alex');
-     var index = lingo.getCharIndex(alexArray, 'x');
-     assert.equal(index, 3);
-     // green
-   });
-   it('should return a color if the character is included in the mystery word', function () {
-     var lingo = new Lingo();
-     var color = lingo.getGridColor('alex', 'z', 3);
-     assert.equal(color, 'red');
-   });
-   it.skip('should unhide the first letter of the mystery word to the player');
-   it.skip('should allow input from the player in all five open tiles');
-   it.skip('should only be allowed if it is a valid word');
-   it.skip('should display in a new row if input word is valid');
-   it.skip('should  of correct-spot and display in unique styling if a letter is in the correct spot');
-   it.skip('should add a class of incorrect-spot and display in a unique way if a letter is in the mystery word but the incorrect spot');
-   it.skip('should track each guess');
-   it.skip('should run correct-word animation if mystery word is guessed');
-   it.skip('should randomly select a new mystery word if mystery word is guessed');
-   it.skip('should display the first letter of the new mystery word');
-   it.skip('should have a maximum number of guesses');
-   it.skip('should end the game when the player has guessed the maximum number of guesses');
-   it.skip('should display the end-game page to the player when the game is over');
+   it('should iterate the score up one on update score', function(){
 
-   describe('Timed', function(){
-     it.skip('should start a timer when the game starts');
-     it.skip('should contain a timer that is displayed to the player');
-     it.skip('should contain a timer that counts down each second');
-     it.skip('should track when a word is guessed according to the timer');
-     it.skip('should end the game when the timer has expired');
+   });
+   it('should update the high score if the current score is greater', function(){
+
+   });
+   it('should NOT update the high score if the current score is not greater', function(){
+
+   });
+   it('should check whether the user guessed a word from the dictionary', function(){
+
+   });
+   it('should not accept characters that are not letters using the RegExp', function(){
+
+   });
+   it('should accept characters that are letters using the RegExp', function(){
+
+   });
+   it('isWord should be a function', function(){
+
+   });
+   it('checkUserGuess should be a function', function(){
+
+   });
+   it('checkUserGuess should return an array', function(){
+
+   });
+   it('should return an array of none if none of the letters are guessed', function(){
+
+   });
+   it('letterFound should be a function', function(){
+
+   });
+   it('letterFound should take three arguments', function(){
+
+   });
+   it('isGameOver should be a function', function(){
+
+   });
+   it('isLetter should be a function', function(){
+
+   });
+   it('isLetter should return true on a letter keypress', function(){
+
+   });
+   it('getUserWordArray should be a function', function(){
+
+   });
+   it('getUserWordArray should return an array', function() {
+
+   });
+   it('newWordRow should be a function', function(){
+
+   });
+   it('should return true when orangeArray.length is 5', function(){
+
+   });
+   it('isRowFilled should be a function', function(){
+
+   });
+   it('should toggleClass when the user guessed a correct word', function(){
+
+   });
+   it('retrieveHighScore should be a function', function(){
+
+   });
+   it('should return a high score when the user retrieveHighScore', function(){
+
+   });
+   it('retrieveCurrentScore should be a function', function(){
+
+   });
+   it('should return a user score when the user retrieveCurrentScore', function(){
+
+   });
+   it('clearStorage should be a function', function(){
+
+   });
+   it('storeMysteryWord should be a function', function(){
+
+   });
+   it('storeCurrentScore should be a function', function(){
+
+   });
+   it('storeHighScore should be a function', function(){
+
+   });
+   it('renderScore should be a function', function(){
+
+   });
+   it('endGame should be a function', function(){
+
+   });
+   it('localStorage getItem mysteryWord should return a word', function(){
+
    });
  });
