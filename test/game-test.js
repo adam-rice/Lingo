@@ -24,6 +24,35 @@ describe('Lingo', function(){
      assert.isTrue(answer);
      // yellow
    });
+   it('should return an array of five orange tiles when a player guesses a correct word.', function () {
+  var arrayOne = ['a', 'p', 'p', 'l', 'e'];
+  var arrayTwo = ['a', 'p', 'p', 'l', 'e'];
+  var colorArray = checkUserGuess(arrayOne, arrayTwo);
+  assert.equal(colorArray, ['orange', 'orange', 'orange', 'orange', 'orange']);
+  });
+  it('should not return an array of five orange tiles when a player guesses a correct word.', function () {
+    var arrayOne = ['a', 'p', 'p', 'x', 'e'];
+    var arrayTwo = ['a', 'p', 'p', 'l', 'e'];
+    var colorArray = checkUserGuess(arrayOne, arrayTwo);
+    assert.notEqual(colorArray, ['orange', 'orange', 'orange', 'orange', 'orange']);
+  });
+
+  it('should return false if the letter has already been found.', function () {
+    var mysteryarray = ['a', 'p', 'p', 'l', 'e'];
+    var userArray = ['p', 'p', 'p', 'l', 'e'];
+    var character = 'p';
+    assert.equal(letterFound(mysteryarray, userArray, character), false);
+  });
+  it('should return false if the letter has already been found.', function () {
+    var mysteryarray = ['a', 'p', 'p', 'l', 'e'];
+    var userArray = ['p', 'p', 'p', 'l', 'e'];
+    var character = 'p';
+    assert.equal(letterFound(mysteryarray, userArray, character), true);
+  });
+
+  it('should return a yellow tile if a player guesses a correct letter but in the incorrect position and that letter has not already been found.', function () {
+
+  });
    it('should iterate the score up one on update score', function(){
 
    });
