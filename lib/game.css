@@ -27,7 +27,9 @@ h1 {
   margin-left: 50px;
   padding: 5px;
 }
-
+.glow {
+  animation: glow 1s infinite alternate;
+}
 table {
   display: inline-block;
 }
@@ -122,7 +124,6 @@ p {
   -moz-animation: highScoreAnimation ease-in 2s; /* Firefox < 16 */
   animation: highScoreAnimation ease-in 2s;
 }
-
 .mystery-word {
   display: inline-block;
   position: relative;
@@ -175,6 +176,15 @@ p {
   100% {
     background-color: #FFFFFF;
   }
+}
+@keyframes glow {
+        from {text-shadow: none;}
+        to {text-shadow: 0px 0px 50px #FF9933;
+        text-shadow: 0px 0px 40px #FF9933;
+        text-shadow: 0px 0px 30px #FF9933;
+        text-shadow: 0px 0px 20px #FF9933;
+        text-shadow: 0px 0px 10px #FF9933;
+        color: #FF9933;}
 }
 @media screen and (max-width: 595px) {
   #gametime {

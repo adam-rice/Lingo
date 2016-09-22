@@ -54,6 +54,9 @@ h2, ul {
 .italics {
   font-style: italic;
 }
+.bold {
+  font-weight: 900;
+}
 #start-button {
   vertical-align: bottom;
   bottom: 0px;
