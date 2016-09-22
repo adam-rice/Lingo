@@ -1,7 +1,13 @@
+body {
+  font-family: 'Bungee', cursive;
+  display: flex;
+  justify-content: center;
+}
+
 section {
   font-family: 'Bungee', cursive;
   font-size: 16px;
-  margin: 15vh 15vw;
+  margin: 15vh;
   width: 600px;
   height: auto;
   padding: 10px;

@@ -1,9 +1,11 @@
 body {
   font-family: 'Bungee', cursive;
+  display: flex;
+  justify-content: center;
 }
 
 #gametime {
-  margin: 15vh 15vw;
+  margin: 15vh;
   min-height: 600px;
   height: auto;
   width: 600px;
@@ -172,5 +174,27 @@ p {
   }
   100% {
     background-color: #FFFFFF;
+  }
+}
+@media screen and (max-width: 595px) {
+  #gametime {
+    width: 250px;
+  }
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 30px;
+    margin-left: 25px;
+    padding: 5px;
+  }
+  .mystery-word {
+    display: none;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 800;
   }
 }
