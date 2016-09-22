@@ -109,96 +109,98 @@ describe('Lingo', function(){
       assert.isFunction(isWord());
     });
   });
-  it.skip('checkUserGuess should be a function', function(){
+  it('checkUserGuess should be a function', function(){
+    $('input').on('keypress', function(){
+      assert.isFunction(checkUserGuess());
+    });
+  });
+  it('checkUserGuess should return an array', function(){
+    $('input').on('keypress', function(){
+
+    });
+  });
+  it('should return an array of none if none of the letters are guessed', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('checkUserGuess should return an array', function(){
+  it('letterFound should be a function', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('should return an array of none if none of the letters are guessed', function(){
+  it('letterFound should take three arguments', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('letterFound should be a function', function(){
+  it('isGameOver should be a function', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('letterFound should take three arguments', function(){
+  it('isLetter should be a function', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('isGameOver should be a function', function(){
+  it('isLetter should return true on a letter keypress', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('isLetter should be a function', function(){
+  it('getUserWordArray should be a function', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('isLetter should return true on a letter keypress', function(){
+  it('getUserWordArray should return an array', function() {
     $('input').on('keypress', function(){
     });
   });
-  it.skip('getUserWordArray should be a function', function(){
+  it('newWordRow should be a function', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('getUserWordArray should return an array', function() {
+  it('should return true when orangeArray.length is 5', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('newWordRow should be a function', function(){
+  it('isRowFilled should be a function', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('should return true when orangeArray.length is 5', function(){
+  it('should toggleClass when the user guessed a correct word', function(){
     $('input').on('keypress', function(){
     });
   });
-  it.skip('isRowFilled should be a function', function(){
-    $('input').on('keypress', function(){
-    });
-  });
-  it.skip('should toggleClass when the user guessed a correct word', function(){
-    $('input').on('keypress', function(){
-    });
-  });
-  it.skip('Score should be an object', function(){
+  it('Score should be an object', function(){
     assert.isObject(Score);
   });
-  it.skip('retrieveHighScore should be a function', function(){
+  it('retrieveHighScore should be a function', function(){
 
   });
-  it.skip('should return a high score when the user retrieveHighScore', function(){
+  it('should return a high score when the user retrieveHighScore', function(){
 
   });
-  it.skip('retrieveCurrentScore should be a function', function(){
+  it('retrieveCurrentScore should be a function', function(){
 
   });
-  it.skip('should return a user score when the user retrieveCurrentScore', function(){
+  it('should return a user score when the user retrieveCurrentScore', function(){
 
   });
-  it.skip('clearStorage should be a function', function(){
+  it('clearStorage should be a function', function(){
 
   });
-  it.skip('storeMysteryWord should be a function', function(){
+  it('storeMysteryWord should be a function', function(){
 
   });
-  it.skip('storeCurrentScore should be a function', function(){
+  it('storeCurrentScore should be a function', function(){
 
   });
-  it.skip('storeHighScore should be a function', function(){
+  it('storeHighScore should be a function', function(){
 
   });
-  it.skip('renderScore should be a function', function(){
+  it('renderScore should be a function', function(){
 
   });
-  it.skip('endGame should be a function', function(){
-
+  it('endGame should be a function', function(){
+    // assert.isFunction(endGame);
   });
-  it.skip('localStorage getItem mysteryWord should return a word', function(){
+  it('localStorage getItem mysteryWord should return a word', function(){
 
   });
 });
