@@ -28,7 +28,7 @@ h1 {
   padding: 5px;
 }
 .glow {
-  animation: glow 1s alternate;
+  animation: glow 1s infinite alternate;
 }
 table {
   display: inline-block;
@@ -182,6 +182,8 @@ p {
         to {text-shadow: 0px 0px 50px #FF9933;
         text-shadow: 0px 0px 40px #FF9933;
         text-shadow: 0px 0px 30px #FF9933;
+        text-shadow: 0px 0px 20px #FF9933;
+        text-shadow: 0px 0px 10px #FF9933;
         color: #FF9933;}
 }
 @media screen and (max-width: 595px) {
