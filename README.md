@@ -1,12 +1,24 @@
-# Game Time Starter Kit
+# LINGO
 
-To install the dependencies:
+[Play the game.](https://adam-rice.github.io/Lingo/)
+
+## Description
+
+Lingo in Javascript and jQuery. This game was built by [Alex Pilewski](https://github.com/Pilewski) and [Adam Rice](https://github.com/adam-rice) as a pair project in Module 1 at the Turing School.
+
+## Installation
+
+Clone repository and install dependencies:
 
 ```
-npm install
+$ git clone https://github.com/adam-rice/Lingo.git
+$ cd Lingo
+$ npm install
 ```
 
-To fire up a development server:
+## Usage
+
+Fire up a development server:
 
 ```
 npm start
@@ -14,18 +26,7 @@ npm start
 
 Once the server is running, you can visit:
 
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
+* `http://localhost:8080/webpack-dev-server/` to run the application.
+* `http://localhost:8080/webpack-dev-server/test.html` to run the test suite in the browser.
 
-To build the static files:
-
-```js
-npm run build
-```
-
-
-To run tests in Node:
-
-```js
-npm test
 ```
