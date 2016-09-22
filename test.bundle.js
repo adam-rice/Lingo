@@ -88,7 +88,7 @@
 	function Lingo() {
 	  Lingo.prototype.generateMysteryWord = function (array) {
 	    var mysteryWord = array[Math.floor(Math.random() * array.length)];
-	    console.log(mysteryWord);
+	    // console.log(mysteryWord);
 	    return mysteryWord;
 	  };
 	  Lingo.prototype.generateWordArray = function (word) {
