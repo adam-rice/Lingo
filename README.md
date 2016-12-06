@@ -4,7 +4,7 @@
 
 ## Description
 
-Lingo in Javascript and jQuery. This game was built by [Alex Pilewski](https://github.com/Pilewski) and [Adam Rice](https://github.com/adam-rice) as a pair project in Module 1 at the Turing School.
+This game was built by [Alex Pilewski](https://github.com/Pilewski) and [Adam Rice](https://github.com/adam-rice) as a pair project in Module 1 at the Turing School.
 
 ## Installation
 
